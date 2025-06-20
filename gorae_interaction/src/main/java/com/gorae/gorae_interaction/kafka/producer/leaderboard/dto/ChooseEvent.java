@@ -6,11 +6,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ChooseEvent {
-// 질문 작성자(userId)가 답변(commentId)를 채택(action)한다.
+// 질문 작성자(userId)가 답변(commentId)를 채택한다.
     public static final String TOPIC = "choose";
 
-//   action: "채택"
-    private String action;
     private Long userId;
     private Long commentId;
-}
+    }
